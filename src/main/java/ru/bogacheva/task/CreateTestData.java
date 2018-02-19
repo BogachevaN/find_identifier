@@ -61,5 +61,6 @@ public class CreateTestData {
                 writer.write(text);
             }
         }
+        writer.flush();
     }
 }
