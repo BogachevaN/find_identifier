@@ -33,7 +33,7 @@ public class MyAnswer {
             mask = in.nextLine();
             //преобразование маски в регулярное выражение
             mask = conversationMask(mask);
-            System.out.println(mask);
+            //System.out.println(mask);
             //получение выборки файлов по маске
             files = (ArrayList) find(dir, mask);
             if (files.size() == 0) {
@@ -60,13 +60,13 @@ public class MyAnswer {
             if (idPos.size()>0){
                 System.out.println(f.getPath());
             }
-            prinLogs(lines, idPos);
+            printLogs(lines, idPos);
         }
 
 
     }
 
-    private static void prinLogs(ArrayList<String> lines, ArrayList<Integer> idPos) {
+    private static void printLogs(ArrayList<String> lines, ArrayList<Integer> idPos) {
         //для каждой позиции выводим по 100
         for (int i=0; i<idPos.size();i++){
             //позиция с искомым id
